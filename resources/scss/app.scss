@@ -1,15 +1,38 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    background-color: lightcoral;
-}
+header{
+    > .my-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
 
-.gatto-img {
-    height: 200px;
-}
+        img {
+            width: 80px;
+            height: 80px;
+        }
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
-    background-size: contain;
+        nav > ul{
+            display: flex;
+            list-style: none;
+
+            > li{
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                > a{
+                    text-decoration: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+
+            > li:nth-child(2){
+                border-bottom: 5px solid blue;
+            }
+        }
+    }
 }
